@@ -38,9 +38,10 @@
         for (let i = 0; i < arr.length; i++) {
             // console.log(arr[i]);
             
-            var rnum = Math.floor(Math.random() * chars.length);
-            randomLetter += chars.substring(rnum,rnum+1);
-            console.log(randomLetter);
+            // var rnum = Math.floor(Math.random() * chars.length);
+            var rnum = chars[Math.floor(Math.random() * chars.length)];
+            // randomLetter += chars.substring(rnum,rnum+1);
+            console.log(rnum);
         }
         console.log("--------")
     }
