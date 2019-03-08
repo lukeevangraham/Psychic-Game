@@ -1,5 +1,9 @@
 // APP RANDOMLY PICKS A LETTER
-    // var chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+var randomLetter = chars[Math.floor(Math.random() * chars.length)];
+console.log(randomLetter);
+
     // var stringLength = 1;
     // var randomLetter = '';
     // for (let i = 0; i < stringLength; i++) {
@@ -28,25 +32,25 @@
 
     // Just exploring
 
-    var chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    // var chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-    var randomLetter = '';
+    // var randomLetter = '';
 
 
 
-    function consoleInside(arr) {
-        for (let i = 0; i < arr.length; i++) {
+    // function consoleInside(arr) {
+        // for (let i = 0; i < arr.length; i++) {
             // console.log(arr[i]);
             
             // var rnum = Math.floor(Math.random() * chars.length);
-            var rnum = chars[Math.floor(Math.random() * chars.length)];
+            // var rnum = chars[Math.floor(Math.random() * chars.length)];
             // randomLetter += chars.substring(rnum,rnum+1);
-            console.log(rnum);
-        }
+            // console.log(rnum);
+        // }
         console.log("--------")
-    }
+    // }
 
-    consoleInside(chars);
+    // consoleInside(chars);
 
 
 
