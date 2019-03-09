@@ -59,6 +59,10 @@ guessesDiv.textContent = "Your Guesses so far: ";
                 guesses = [];
                 guessesLeft = 9;
                 guessesLeftDiv.textContent = "Guesses Left: " + guessesLeft;
+
+                // CLEAR THE GUESSES SO FAR
+                guessesDiv.textContent = "Your Guesses so far: ";
+
             }
             
         } else {
@@ -68,6 +72,9 @@ guessesDiv.textContent = "Your Guesses so far: ";
             guesses = [];
             guessesLeft = 9;
             guessesLeftDiv.textContent = "Guesses Left: " + guessesLeft;
+
+            // CLEAR THE 'GUESSES SO FAR'
+            guessesDiv.textContent = "Your Guesses so far: ";
         }
         
     // }
