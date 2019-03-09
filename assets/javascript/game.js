@@ -37,7 +37,7 @@ guessesDiv.textContent = "Your Guesses so far: ";
             var lowUserGuess = userGuess.toLowerCase();
         guesses.push(lowUserGuess);
 
-        // DRCREASE GUESSLEFT COUNTER
+        // DECREASE GUESSLEFT COUNTER
             guessesLeft--;
             guessesLeftDiv.textContent = "Guesses Left: " + guessesLeft;
 
