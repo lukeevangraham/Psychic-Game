@@ -9,6 +9,11 @@ var losses = 0;
 var guessesLeft = 0;
 var guesses = [];
 
+// var targetDiv = document.getElementById("empty-div");
+// targetDiv.textContent = "Hello Friends!";
+
+var winsDiv = document.getElementById("wins-div").textContent = "Hello friends!";
+
     // USER GUESSES WHICH LETTER THE APP CHOSE
 
     // This function runs whenever the user presses a key.
