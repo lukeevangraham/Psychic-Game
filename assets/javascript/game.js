@@ -9,23 +9,6 @@ var losses = 0;
 var guessesLeft = 0;
 var guesses = [];
 
-// if (guesses.length <= 8) {
-//     // USER GUESSES WHICH LETTER THE APP CHOSE
-
-//     // This function runs whenever the user presses a key.
-//     document.onkeyup = function(event) {
-
-//         // Determines which key was pressed.
-//         var userGuess = event.key;
-//         guesses.push(userGuess);
-//         console.log(guesses);
-//         console.log(guesses.length);
-//     }
-// } else {
-//     console.log("YOU LOSE!")
-// }
-
-// for (let i = 0; i < 9; i++) {
     // USER GUESSES WHICH LETTER THE APP CHOSE
 
     // This function runs whenever the user presses a key.
@@ -37,6 +20,11 @@ var guesses = [];
         guesses.push(userGuess);
         console.log(guesses);
         console.log(guesses.length);
+
+            if (guesses[guesses.length - 1] === randomLetter) {
+                console.log("YOU WIN!");
+                wins++;
+            }
             
         } else {
             console.log("YOU LOSE");
