@@ -42,10 +42,12 @@ guessesDiv.textContent = "Your Guesses so far: ";
             guessesLeft--;
             guessesLeftDiv.textContent = "Guesses Left: " + guessesLeft;
 
+        guessesDiv.textContent = "Your Guesses so far: " + guesses;
+
         // CONVERTING THE ARRAY ENTRY TO A NODE FOR DISPLAY
-        var z = document.createElement('div');
-        z.textContent = guesses[guesses.length - 1];
-        guessesDiv.appendChild(z);
+        // var z = document.createElement('div');
+        // z.textContent = guesses[guesses.length - 1];
+        // guessesDiv.appendChild(z);
 
 
         // guessesDiv.appendChild('guesses');
@@ -63,6 +65,9 @@ guessesDiv.textContent = "Your Guesses so far: ";
                 // CLEAR THE GUESSES SO FAR
                 guessesDiv.textContent = "Your Guesses so far: ";
 
+                // PICK NEW RANDOM LETTER
+                randomLetter = chars[Math.floor(Math.random() * chars.length)];
+
             }
             
         } else {
@@ -75,6 +80,9 @@ guessesDiv.textContent = "Your Guesses so far: ";
 
             // CLEAR THE 'GUESSES SO FAR'
             guessesDiv.textContent = "Your Guesses so far: ";
+
+            //PICK NEW RANDOM LETTER
+            randomLetter = chars[Math.floor(Math.random() * chars.length)];
         }
         
     // }
