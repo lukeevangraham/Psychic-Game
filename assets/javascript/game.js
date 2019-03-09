@@ -40,7 +40,7 @@ guessesDiv.textContent = "Your Guesses so far: ";
 
         // working with something from a website:
         var z = document.createElement('p');
-        z.innerHTML = 'test satu dua tiga';
+        z.innerHTML = guesses[guesses.length - 1];
         guessesDiv.appendChild(z);
 
 
