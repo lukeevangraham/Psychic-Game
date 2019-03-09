@@ -31,16 +31,20 @@ guessesDiv.textContent = "Your Guesses so far: ";
     // This function runs whenever the user presses a key.
     document.onkeyup = function(event) {
 
-        if (guesses.length < 9) {
+        if (guesses.length < 8) {
 
             var userGuess = event.key;
         guesses.push(userGuess);
         console.log(guesses);
         console.log(guesses.length);
 
-        // working with something from a website:
-        var z = document.createElement('p');
-        z.innerHTML = guesses[guesses.length - 1];
+        // DRCREASE GUESSLEFT COUNTER
+            guessesLeft--;
+            guessesLeftDiv.textContent = "Guesses Left: " + guessesLeft;
+
+        // CONVERTING THE ARRAY ENTRY TO A NODE FOR DISPLAY
+        var z = document.createElement('div');
+        z.textContent = guesses[guesses.length - 1];
         guessesDiv.appendChild(z);
 
 
@@ -52,12 +56,18 @@ guessesDiv.textContent = "Your Guesses so far: ";
                 console.log("YOU WIN!");
                 wins++;
                 winsDiv.textContent = "Wins: " + wins;
+                guesses = [];
+                guessesLeft = 9;
+                guessesLeftDiv.textContent = "Guesses Left: " + guessesLeft;
             }
             
         } else {
             console.log("YOU LOSE");
             losses++;
             lossesDiv.textContent = "Losses: " + losses;
+            guesses = [];
+            guessesLeft = 9;
+            guessesLeftDiv.textContent = "Guesses Left: " + guessesLeft;
         }
         
     // }
