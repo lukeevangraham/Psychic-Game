@@ -28,6 +28,7 @@ var guesses = [];
             
         } else {
             console.log("YOU LOSE");
+            losses++;
         }
 
         // Determines which key was pressed.
