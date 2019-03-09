@@ -34,25 +34,18 @@ guessesDiv.textContent = "Your Guesses so far: ";
         if (guesses.length < 8) {
 
             var userGuess = event.key;
-        guesses.push(userGuess);
-        console.log(guesses);
-        console.log(guesses.length);
+            var lowUserGuess = userGuess.toLowerCase();
+        guesses.push(lowUserGuess);
+
+        // console.log(guesses);
+        // console.log(guesses.length);
 
         // DRCREASE GUESSLEFT COUNTER
             guessesLeft--;
             guessesLeftDiv.textContent = "Guesses Left: " + guessesLeft;
 
+        //  DISPLAY ENTERED GUESSES
         guessesDiv.textContent = "Your Guesses so far: " + guesses;
-
-        // CONVERTING THE ARRAY ENTRY TO A NODE FOR DISPLAY
-        // var z = document.createElement('div');
-        // z.textContent = guesses[guesses.length - 1];
-        // guessesDiv.appendChild(z);
-
-
-        // guessesDiv.appendChild('guesses');
-
-        // guessesDiv.appendChild(guesses[guesses.length]);
 
             if (guesses[guesses.length - 1] === randomLetter) {
                 console.log("YOU WIN!");
