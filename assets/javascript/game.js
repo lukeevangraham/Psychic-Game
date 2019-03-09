@@ -2,7 +2,7 @@
 var chars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 var randomLetter = chars[Math.floor(Math.random() * chars.length)];
-console.log(randomLetter);
+// console.log(randomLetter);
 
 var wins = 0;
 var losses = 0;
@@ -36,9 +36,6 @@ guessesDiv.textContent = "Your Guesses so far: ";
             var userGuess = event.key;
             var lowUserGuess = userGuess.toLowerCase();
         guesses.push(lowUserGuess);
-
-        // console.log(guesses);
-        // console.log(guesses.length);
 
         // DRCREASE GUESSLEFT COUNTER
             guessesLeft--;
